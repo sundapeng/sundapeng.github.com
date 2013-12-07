@@ -11,8 +11,9 @@ owner:
   bio:            "Hi, I'm a programmer of Intel Corporation, I'm working on Hadoop. "
   email:          dapeng.sun@intel.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:       sundp123
-  facebook:       
+  twitter:
+  weibo:          SunDapeng
+  facebook:
   github:         
   stackexchange:  
   linkedin:       

@@ -6,17 +6,20 @@
 			<a href="#">About</a>
 			<ul class="dl-submenu">
 				<li>
-					<img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
+					<!--<img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">-->
 					<h4>{{ site.owner.name }}</h4>
 					<p>{{ site.owner.bio }}</p>
 				</li>
 				<li><a href="{{ site.url }}/about/">Learn More</a></li>
 				{% if site.owner.email %}<li>
-					<a href="mailto:{{ site.owner.email }}"><i class="icon-envelope"></i> Email</a>
+					<a href="mailto:{{ site.owner.email }}"><i class="icon-envelope"></i>{{ site.owner.email }}</a>
 				</li>{% endif %}
 				{% if site.owner.twitter %}<li>
-					<a href="http://twitter.com/{{ site.owner.twitter }}"><i class="icon-twitter"></i> Twitter</a>
+					<a href="http://twitter.com/{{ site.owner.twitter }}"><i class="icon-twitter"></i>@{{ site.owner.twitter }}</a>
 				</li>{% endif %}
+                {% if site.owner.weibo %}<li>
+                <a href="http://weibo.com/{{ site.owner.weibo }}"><i class="icon-weibo"></i>@{{ site.owner.weibo }}</a>
+                </li>{% endif %}
 				{% if site.owner.facebook %}<li>
 					<a href="http://facebook.com/{{ site.owner.facebook }}"><i class="icon-facebook"></i> Facebook</a>
 				</li>{% endif %}
