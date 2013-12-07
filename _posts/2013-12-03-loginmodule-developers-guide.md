@@ -4,9 +4,6 @@ category : token-auth
 tagline: "Supporting tagline"
 tags : [JAAS, Security]
 ---
-{% include JB/setup %}
-
-<script src="http://sdp-dev.sh.intel.com:4000/assets/js/jquery.toc.js"></script>
 
 
 # Overview
