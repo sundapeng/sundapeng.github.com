@@ -20,7 +20,7 @@ image:
     {% endif %}
   </header>
   <div class="entry-content" itemprop="description">
-    {{ post.content }}
+    <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %} <a href="{{ site.url }}{{ post.url }}">Continue reading</a></p>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}
