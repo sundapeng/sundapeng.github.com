@@ -7,7 +7,7 @@ tags: [jekyll, github建站]
 ---
 {% include JB/setup %}
 
-## 准备搭建环境
+# 准备搭建环境
 
 **由于博主使用的Ubuntu 14.10, 以下命令主要适用于Ubuntu, 其他Linux系统以及Mac系统请视情况而定**
 

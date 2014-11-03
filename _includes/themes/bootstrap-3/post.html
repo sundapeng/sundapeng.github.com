@@ -8,7 +8,7 @@
       <span>{{ page.date | date_to_long_string }}</span>
     </div>
     <div class="content">
-      {{ content }}
+      {{ content | toc_generate }}
     </div>
 
   {% unless page.categories == empty %}
